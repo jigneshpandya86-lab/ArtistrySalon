@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products – Artistray Salon Vadodara</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/pages.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo"><span class="logo-main">Artistray</span><span class="logo-sub">Salon & Beauty Studio</span></a>
+      <nav class="nav" id="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="updates.html" class="nav-link">Updates</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="booking.html" class="nav-cta">Book Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero-bg">
+      <div class="img-placeholder-box" style="min-height:360px;border-radius:0;border:none;">
+        <img src="../images/hero/products-banner.jpg" alt="Products" onerror="this.parentElement.classList.add('placeholder-active')"/>
+        <div class="placeholder-label">📸 Products Banner Photo</div>
+      </div>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <span class="section-tag light">Shop With Us</span>
+      <h1 class="page-title">Beauty <em>Products</em></h1>
+      <p>Curated women's beauty essentials, available in-store & on order.</p>
+    </div>
+  </div>
+
+  <main class="container" style="padding: 80px 24px;">
+
+    <div class="products-filter-bar">
+      <button class="filter-btn active" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="hair">Hair</button>
+      <button class="filter-btn" data-cat="skin">Skin & Face</button>
+      <button class="filter-btn" data-cat="nails">Nails</button>
+      <button class="filter-btn" data-cat="body">Body</button>
+      <button class="filter-btn" data-cat="makeup">Makeup</button>
+    </div>
+
+    <div class="products-full-grid" id="products-grid">
+
+      <!-- HAIR PRODUCTS -->
+      <!-- PLACEHOLDER: Replace images, names, prices -->
+      <div class="product-card-full" data-cat="hair">
+        <div class="product-img-wrap" style="height:260px;">
+          <div class="img-placeholder-box"><img src="../images/products/hair-serum.jpg" alt="" onerror="this.parentElement.classList.add('placeholder-active')"/><div class="placeholder-label">📸 Hair Serum</div></div>
+        </div>
+        <div class="product-info">
+          <span class="product-cat-tag">Hair</span>
+          <h4>Nourishing Hair Serum</h4>
+          <p>Controls frizz and adds brilliant shine.</p>
+          <div class="product-footer">
+            <span class="price">₹ ---</span>
+            <button class="btn-sm" onclick="handleOrder('Nourishing Hair Serum')">Order via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card-full" data-cat="hair">
+        <div class="product-img-wrap" style="height:260px;">
+          <div class="img-placeholder-box"><img src="../images/products/hair-mask.jpg" alt="" onerror="this.parentElement.classList.add('placeholder-active')"/><div class="placeholder-label">📸 Hair Mask</div></div>
+          <span class="product-badge">Popular</span>
+        </div>
+        <div class="product-info">
+          <span class="product-cat-tag">Hair</span>
+          <h4>Deep Conditioning Mask</h4>
+          <p>Intensive repair for damaged, dry hair.</p>
+          <div class="product-footer">
+            <span class="price">₹ ---</span>
+            <button class="btn-sm" onclick="handleOrder('Deep Conditioning Mask')">Order via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card-full" data-cat="hair">
+        <div class="product-img-wrap" style="height:260px;">
+          <div class="img-placeholder-box"><img src="../images/products/shampoo.jpg" alt="" onerror="this.parentElement.classList.add('placeholder-active')"/><div class="placeholder-label">📸 Shampoo</div></div>
+        </div>
+        <div class="product-info">
+          <span class="product-cat-tag">Hair</span>
+          <h4>Professional Shampoo</h4>
+          <p>Salon-quality cleanse for all hair types.</p>
+          <div class="product-footer">
+            <span class="price">₹ ---</span>
+            <button class="btn-sm" onclick="handleOrder('Professional Shampoo')">Order via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKIN PRODUCTS -->
+      <div class="product-card-full" data-cat="skin">
+        <div class="product-img-wrap" style="height:260px;">
+          <div class="img-placeholder-box"><img src="../images/products/face-moisturizer.jpg" alt="" onerror="this.parentElement.classList.add('placeholder-active')"/><div class="placeholder-label">📸 Face Moisturizer</div></div>
+          <span class="product-badge bestseller">Best Seller</span>
+        </div>
+        <div class="product-info">
+          <span class="product-cat-tag">Skin</span>
+          <h4>Daily Glow Moisturizer</h4>
+          <p>Lightweight hydration for all skin types.</p>
+          <div class="product-footer">
+            <span class="price">₹ ---</span>
+            <button class="btn-sm" onclick="handleOrder('Daily Glow Moisturizer')">Order via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card-full" data-cat="skin">
+        <div class="product-img-wrap" style="height:260px;">
+          <div class="img-placeholder-box"><img src="../images/products/face-wash.jpg" alt="" onerror="this.parentElement.classList.add('placeholder-active')"/><div class="placeholder-label">📸 Face Wash</div></div>
+        </div>
+        <div class="product-info">
+          <span class="product-cat-tag">Skin</span>
+          <h4>Brightening Face Wash</h4>
+          <p>Gentle cleanse with a radiance boost.</p>
+          <div class="product-footer">
+            <span class="price">₹ ---</span>
+            <button class="btn-sm" onclick="handleOrder('Brightening Face Wash')">Order via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card-full" data-cat="skin">
+        <div class="product-img-wrap" style="height:260px;">
+          <div class="img-placeholder-box"><img src="../images/products/sunscreen.jpg" alt="" onerror="this.parentElement.classList.add('placeholder-active')"/><div class="placeholder-label">📸 Sunscreen</div></div>
+        </div>
+        <div class="product-info">
+          <span class="product-cat-tag">Skin</span>
+          <h4>SPF 50 Sunscreen</h4>
+          <p>Broad spectrum protection, non-greasy.</p>
+          <div class="product-footer">
+            <span class="price">₹ ---</span>
+            <button class="btn-sm" onclick="handleOrder('SPF 50 Sunscreen')">Order via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- NAILS -->
+      <div class="product-card-full" data-cat="nails">
+        <div class="product-img-wrap" style="height:260px;">
+          <div class="img-placeholder-box"><img src="../images/products/nail-polish.jpg" alt="" onerror="this.parentElement.classList.add('placeholder-active')"/><div class="placeholder-label">📸 Nail Polish</div></div>
+        </div>
+        <div class="product-info">
+          <span class="product-cat-tag">Nails</span>
+          <h4>Long-Lasting Nail Polish Set</h4>
+          <p>Vibrant shades for every mood.</p>
+          <div class="product-footer">
+            <span class="price">₹ ---</span>
+            <button class="btn-sm" onclick="handleOrder('Long-Lasting Nail Polish Set')">Order via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card-full" data-cat="nails">
+        <div class="product-img-wrap" style="height:260px;">
+          <div class="img-placeholder-box"><img src="../images/products/nail-care.jpg" alt="" onerror="this.parentElement.classList.add('placeholder-active')"/><div class="placeholder-label">📸 Nail Care Kit</div></div>
+        </div>
+        <div class="product-info">
+          <span class="product-cat-tag">Nails</span>
+          <h4>Nail Strengthening Kit</h4>
+          <p>Repair and strengthen brittle nails.</p>
+          <div class="product-footer">
+            <span class="price">₹ ---</span>
+            <button class="btn-sm" onclick="handleOrder('Nail Strengthening Kit')">Order via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- BODY -->
+      <div class="product-card-full" data-cat="body">
+        <div class="product-img-wrap" style="height:260px;">
+          <div class="img-placeholder-box"><img src="../images/products/wax-kit.jpg" alt="" onerror="this.parentElement.classList.add('placeholder-active')"/><div class="placeholder-label">📸 Wax Kit</div></div>
+        </div>
+        <div class="product-info">
+          <span class="product-cat-tag">Body</span>
+          <h4>At-Home Wax Kit</h4>
+          <p>Professional-grade wax for home use.</p>
+          <div class="product-footer">
+            <span class="price">₹ ---</span>
+            <button class="btn-sm" onclick="handleOrder('At-Home Wax Kit')">Order via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card-full" data-cat="body">
+        <div class="product-img-wrap" style="height:260px;">
+          <div class="img-placeholder-box"><img src="../images/products/body-lotion.jpg" alt="" onerror="this.parentElement.classList.add('placeholder-active')"/><div class="placeholder-label">📸 Body Lotion</div></div>
+        </div>
+        <div class="product-info">
+          <span class="product-cat-tag">Body</span>
+          <h4>Luxe Body Lotion</h4>
+          <p>Rich, long-lasting moisture for silky skin.</p>
+          <div class="product-footer">
+            <span class="price">₹ ---</span>
+            <button class="btn-sm" onclick="handleOrder('Luxe Body Lotion')">Order via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAKEUP -->
+      <div class="product-card-full" data-cat="makeup">
+        <div class="product-img-wrap" style="height:260px;">
+          <div class="img-placeholder-box"><img src="../images/products/lipstick.jpg" alt="" onerror="this.parentElement.classList.add('placeholder-active')"/><div class="placeholder-label">📸 Lipstick</div></div>
+          <span class="product-badge">New</span>
+        </div>
+        <div class="product-info">
+          <span class="product-cat-tag">Makeup</span>
+          <h4>Matte Lipstick Collection</h4>
+          <p>Rich pigment, 8-hour wear formula.</p>
+          <div class="product-footer">
+            <span class="price">₹ ---</span>
+            <button class="btn-sm" onclick="handleOrder('Matte Lipstick Collection')">Order via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card-full" data-cat="makeup">
+        <div class="product-img-wrap" style="height:260px;">
+          <div class="img-placeholder-box"><img src="../images/products/foundation.jpg" alt="" onerror="this.parentElement.classList.add('placeholder-active')"/><div class="placeholder-label">📸 Foundation</div></div>
+        </div>
+        <div class="product-info">
+          <span class="product-cat-tag">Makeup</span>
+          <h4>Full Coverage Foundation</h4>
+          <p>Smooth, natural-finish foundation.</p>
+          <div class="product-footer">
+            <span class="price">₹ ---</span>
+            <button class="btn-sm" onclick="handleOrder('Full Coverage Foundation')">Order via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="products-order-note">
+      <div class="note-icon">📦</div>
+      <h3>How to Order</h3>
+      <p>Click <strong>"Order via WhatsApp"</strong> on any product to place your order directly. We'll confirm availability, pricing, and delivery / pickup details with you personally.</p>
+      <p>You can also visit us in-store at <strong>F-105, Lotus Elite, Gotri Rd, Vadodara</strong> or call <a href="tel:+919510881863">+91 95108 81863</a>.</p>
+    </div>
+
+  </main>
+
+  <a href="https://wa.me/919510881863" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <footer class="footer">
+    <div class="footer-bottom" style="padding:24px;">
+      <p>© <span id="year"></span> Artistray Salon | F-105/106 Lotus Elite, Gotri Rd, Vadodara | +91 95108 81863</p>
+    </div>
+  </footer>
+
+  <script>
+    // Filter functionality
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const cat = this.dataset.cat;
+        document.querySelectorAll('.product-card-full').forEach(card => {
+          card.style.display = (cat === 'all' || card.dataset.cat === cat) ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
